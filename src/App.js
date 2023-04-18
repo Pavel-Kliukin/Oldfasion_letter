@@ -22,13 +22,13 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div className='formAndPrev'>
-          <Form 
-            modalHandler = {this.modalHandler}
-          />
-          <Preview />
-        </div>
-        {this.state.showModal && <Modal />} {/* if showModal is true than Modal will be shown */}
+        <Form 
+          modalHandler = {this.modalHandler}
+        />
+        <Preview />
+        {this.state.showModal && <Modal 
+          click = {this.modalHandler}
+        />} {/* if showModal is true than Modal will be shown */}
       </div>
     );
   }

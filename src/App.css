@@ -1,13 +1,8 @@
 .App {
-  background: cornflowerblue;
+  background: url("./assets/woodenDesk2.jpg") no-repeat bottom left/cover;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   height: 100vh;
-}
-
-.App .formAndPrev {
-  display: flex;
-  flex-direction: row;
 }
 
 .App .modal {

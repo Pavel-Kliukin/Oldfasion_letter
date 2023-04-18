@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.css'
 
-const Modal = () => {
+const Modal = (props) => {
   return (
     <div className='Modal'>
       <div className='displayBox'>
@@ -12,8 +12,8 @@ const Modal = () => {
         <div className='display' id='messageDisplay'>Message: </div>
       </div>
       <div className='buttons'>
-        <button>Yes, I'm sure</button>
-        <button>No, I don't want to post it</button>
+        <button onClick = {props.click}>Yes, I'm sure</button>
+        <button onClick = {props.click}>No, I don't want to post it</button>
       </div>
     </div>
   );

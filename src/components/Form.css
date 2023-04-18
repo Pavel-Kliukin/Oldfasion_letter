@@ -1,18 +1,15 @@
-.notesForm {
+form {
   margin: 1rem;
   background-color: #333;
   color: aliceblue;
+  display: flex;
+  flex-direction: column;
   width: 15vw;
   height: 45vh;
   border-radius: 5px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.notesForm div {
+form div {
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
@@ -20,7 +17,16 @@ form {
   margin-right: 1rem;
 }
 
-.notesForm button {
+form input, form select {
+  width: 90%;
+  height: 1.2rem;
+}
+
+form textarea{
+  height: 3.5rem;
+}
+
+form button {
   margin-left: 1rem;
   margin-top: 1.5rem;
 }
