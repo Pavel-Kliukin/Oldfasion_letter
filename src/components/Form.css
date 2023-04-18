@@ -1,0 +1,26 @@
+.notesForm {
+  margin: 1rem;
+  background-color: #333;
+  color: aliceblue;
+  width: 15vw;
+  height: 45vh;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.notesForm div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.notesForm button {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
