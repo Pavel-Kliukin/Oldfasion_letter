@@ -7,29 +7,29 @@ const Form = (props) => {
       <form>
         <div className='name'>
           <label>Name</label>
-          <input type="text" placeholder="Name" onChange={props}/>
+          <input type="text" placeholder="Name"/>
         </div>
         <div className='lastName'>
           <label>Last name</label>
-          <input type="text" placeholder="Last name" onChange={props}/>
+          <input type="text" placeholder="Last name" />
         </div>
         <div className='phone'>
           <label>Phone</label>
-          <input type="number" onChange={props}/>
+          <input type="number"/>
         </div>
         <div className='role'>
           <label>Role</label>
-          <select onChange={props}>
+          <select>
             <option value="Teacher">Teacher</option>
             <option value="Student">Student</option>
             <option value="Other">Other</option>
           </select>
         </div>
         <div className='message'>
-          <label for="message">Message</label>
+          <label>Message</label>
           <textarea></textarea>
         </div>
-        <button>SEND</button>
+        <button onClick={props.modalHandler}>SEND</button>
       </form>
     </div>
   );

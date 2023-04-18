@@ -5,16 +5,30 @@ import Modal from './components/Modal';
 import './App.css'
 
 class App extends Component {
+
+  state={
+    showModal: false
+  }
+
+  modalHandler = (e) => {
+    e.preventDefault() //This is to prevent the reload of the console
+    console.log("I work")
+    this.setState({
+      // showModal: true    this what we used first
+      showModal: !this.state.showModal // but this one is cooler, because it change the state to opposite (switches tru and false)
+    })
+  }
+
   render() {
     return (
       <div className='App'>
         <div className='formAndPrev'>
-          <Form />
+          <Form 
+            modalHandler = {this.modalHandler}
+          />
           <Preview />
         </div>
-        <div className='modal'>
-          <Modal />
-        </div>
+        {this.state.showModal && <Modal />} {/* if showModal is true than Modal will be shown */}
       </div>
     );
   }
