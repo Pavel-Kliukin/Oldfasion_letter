@@ -18,6 +18,7 @@ class App extends Component {
   changeHandler = (e) => {
     this.setState({
       [e.target.name]: e.target.value
+      // e.target.name ---> name, lastname, greeting etc. from Form
     })
   }
 
@@ -38,25 +39,27 @@ class App extends Component {
         </header>
         <div className='formAndPreview'>
           <Form 
-            changeHandler = {this.changeHandler}
-            greetingHandler = {this.greetingHandler}
-            nameHandler = {this.nameHandler}
-            lastnameHandler = {this.lastnameHandler}
-            messageHandler = {this.messageHandler}
+            changeHandler = {this.changeHandler} // we did changeHandler instead of below:
+            // greetingHandler = {this.greetingHandler}
+            // nameHandler = {this.nameHandler}
+            // lastnameHandler = {this.lastnameHandler}
+            // messageHandler = {this.messageHandler}
             modalHandler = {this.modalHandler}
           />
           <Preview 
-            greeting = {this.state.greeting}
-            message = {this.state.message}
-            name = {this.state.name}
-            lastname = {this.state.lastname}
+          {...this.state} // we did {...this.state} instead of below:
+            // greeting = {this.state.greeting}
+            // message = {this.state.message}
+            // name = {this.state.name}
+            // lastname = {this.state.lastname}
           />
         </div>
         {this.state.showModal && <Modal 
-          greeting = {this.state.greeting}
-          message = {this.state.message}
-          name = {this.state.name}
-          lastname = {this.state.lastname}
+          {...this.state} // we did {...this.state} instead of below:
+          // greeting = {this.state.greeting}
+          // message = {this.state.message}
+          // name = {this.state.name}
+          // lastname = {this.state.lastname}
           click = {this.modalHandler}
         />} {/* if showModal is true than Modal will be shown */}
       </div>
