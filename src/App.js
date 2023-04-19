@@ -3,6 +3,7 @@ import Form from './components/Form';
 import Preview from './components/Preview';
 import Modal from './components/Modal';
 import './App.css'
+// import image from './assets/pen.png'
 
 class App extends Component {
 
@@ -13,29 +14,10 @@ class App extends Component {
     lastname: 'Kliukin',
     showModal: false
   }
-
   
-  greetingHandler = (e) => {
+  changeHandler = (e) => {
     this.setState({
-      greeting: e.target.value
-    })
-  }
-
-  nameHandler = (e) => {
-    this.setState({
-      name: e.target.value
-    })
-  }
-  
-  lastnameHandler = (e) => {
-    this.setState({
-      lastname: e.target.value
-    })
-  }
-  
-  messageHandler = (e) => {
-    this.setState({
-      message: e.target.value
+      [e.target.name]: e.target.value
     })
   }
 
@@ -51,11 +33,12 @@ class App extends Component {
     return (
       <div className='App'>
         <header>
+          {/* <img id="penImg" src={image} alt="Parker pen"/> */}
           <h1>Oldfasion letter</h1>
-          {/* <img id="penImg" src="../src/assets/pen.png" alt="Parker pen"/> */}
         </header>
         <div className='formAndPreview'>
           <Form 
+            changeHandler = {this.changeHandler}
             greetingHandler = {this.greetingHandler}
             nameHandler = {this.nameHandler}
             lastnameHandler = {this.lastnameHandler}
