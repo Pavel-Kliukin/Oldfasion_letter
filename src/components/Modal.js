@@ -6,9 +6,10 @@ const Modal = (props) => {
     <div className='overlay'>
       <div className='Modal'>
         <div className='displayBox'>
+          <h2>Is it correct data?</h2>
           <div className='display' id='nameDisplay'>Name: {props.name}</div>
           <div className='display' id='lastNameDisplay'>Last Name: {props.lastname}</div>
-          <div className='display' id='phoneDisplay'>Phone: </div>
+          {/* <div className='display' id='phoneDisplay'>Phone: </div> */}
           <div className='display' id='roleDisplay'>To: {props.greeting}</div>
           <div className='display' id='messageDisplay'>Message: {props.message}</div>
         </div>

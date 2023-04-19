@@ -5,8 +5,8 @@
   flex-direction: column;
   justify-content: space-between;
   background: url("../assets/noteBackground.jpg") no-repeat top center/cover;
-  width: 40%;
-  height: 40vh;
+  width: 45%;
+  min-height: 40vh;
   border-radius: 7px;
   margin-left: 3rem;
   margin-top: 1rem;

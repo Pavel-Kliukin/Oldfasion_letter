@@ -52,7 +52,7 @@ class App extends Component {
       <div className='App'>
         <header>
           <h1>Oldfasion letter</h1>
-          {/* <img id="penImg" src="./assets/pen.png" alt="Parker pen"/> */}
+          {/* <img id="penImg" src="../src/assets/pen.png" alt="Parker pen"/> */}
         </header>
         <div className='formAndPreview'>
           <Form 

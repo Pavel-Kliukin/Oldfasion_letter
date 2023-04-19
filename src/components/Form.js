@@ -6,11 +6,11 @@ const Form = (props) => {
     <form>
       <div className='name'>
         <label>Name</label>
-        <input type="text" placeholder="Name" onChange={props.nameHandler}/>
+        <input type="text" placeholder="Pavel" onChange={props.nameHandler}/>
       </div>
       <div className='lastName'>
         <label>Last name</label>
-        <input type="text" placeholder="Last name" onChange={props.lastnameHandler}/>
+        <input type="text" placeholder="Kliukin" onChange={props.lastnameHandler}/>
       </div>
       {/* <div className='phone'>
         <label>Phone</label>
