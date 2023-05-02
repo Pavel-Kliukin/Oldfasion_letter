@@ -75,6 +75,7 @@ class App extends Component {
           />
         </div>
         <div className='posts'>
+          <div className='sentletters'><h2>Sent letters:</h2></div>
           <Posts data={this.state.data}/>
         </div>
         {this.state.showModal && <Modal 
