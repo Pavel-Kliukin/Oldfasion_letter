@@ -4,6 +4,7 @@
   background: url("./assets/woodenDesk.jpg") no-repeat bottom left/cover;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   height: 100vh;
 }
 
@@ -28,6 +29,14 @@ header h1 {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+}
+
+.posts {
+  width: 60vw;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {

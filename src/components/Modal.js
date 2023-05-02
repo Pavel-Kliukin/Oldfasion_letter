@@ -14,8 +14,8 @@ const Modal = (props) => {
           <div className='display' id='messageDisplay'>Message: {props.message}</div>
         </div>
         <div className='buttons'>
-          <button onClick = {props.click}>Yes, I'm sure</button>
-          <button onClick = {props.click}>No, I don't want to post it</button>
+          <button name="yes" onClick = {props.click}>Yes, I'm sure</button>
+          <button onClick = {props.click}>No, I don't want to send it</button>
         </div>
       </div>
     </div>

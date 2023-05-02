@@ -1,0 +1,8 @@
+.post {
+  margin-top: 1rem;
+  background: url("../assets/noteBackground.jpg") no-repeat top center/cover;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333;
+  border-radius: 5px;
+}

@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Anton",
+      "lastname": "Bezruchenkov",
+      "to": "my dear friend",
+      "message": "Testing message from Anton"
+    },
+    {
+      "id": 2,
+      "name": "Ivan",
+      "lastname": "Pudin",
+      "to": "my dear friend",
+      "message": "Testing message from Ivan"
+    },
+    {
+      "id": 3,
+      "name": "Arseniy",
+      "lastname": "Kapshtyk",
+      "to": "my beloved teacher",
+      "message": "Testing message from Arseniy"
+    },
+    {
+      "id": 4,
+      "name": "Anton",
+      "lastname": "Bezruchenkov",
+      "to": "my dear friend",
+      "message": "Testing message from Anton"
+    },
+    {
+      "name": "James",
+      "lastname": "Bond",
+      "to": "My dear friend",
+      "message": "Hi from me",
+      "id": 5
+    }
+  ]
+}
